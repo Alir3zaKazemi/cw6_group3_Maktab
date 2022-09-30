@@ -18,9 +18,7 @@
   width: 95vw;
   min-height: 50vh;
   /* background-color: #2c3333; */
-  background: linear-gradient(90deg,
-      rgba(184, 0, 255, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
+  background-color: #395B64;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -39,13 +37,13 @@
   /* border: 1px solid #111; */
   border-radius: 10px;
   padding: 5px;
-  color: #01313f;
+  color: white;
 }
 
 .back {
   background-color: #01313f;
   box-shadow: 1px 1px 2px #222;
-  color: white;
+  color: #4fb0ca;
 }
 
 .day h3,
@@ -80,6 +78,24 @@ svg {
   margin-left: 3%;
 }
 
+.delete-icon:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(48, 76, 94);
+}
+
+.trash:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(138, 138, 138);
+}
+
+.modify:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(138, 138, 138);
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -98,10 +114,7 @@ svg {
 
 .task {
   width: 95%;
-  background: linear-gradient(90deg,
-      rgba(255, 171, 0, 1) 0%,
-      rgba(227, 255, 0, 1) 100%);
-  /* background-color: yellow; */
+  background-color: #A5C9CA;
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 7px #222;
@@ -136,7 +149,7 @@ button {
 }
 
 .add-task button {
-  background-color: rgb(255, 0, 50);
+  background-color: #1597BB;
   color: #eee;
   font-size: 18px;
 }
@@ -180,6 +193,15 @@ button {
   border: none;
 }
 
+.login-modal button:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.login-modal button:active {
+  background-color: #395b64;
+}
+
 .edit-modal {
   z-index: 51;
   box-shadow: 1px 1px 10px 5px #111;
@@ -218,6 +240,15 @@ button {
   border: none;
 }
 
+.edit-modal button:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.edit-modal button:active {
+  background-color: #395b64;
+}
+
 .is-blurred {
   filter: blur(3px);
 }
@@ -248,5 +279,5 @@ button {
 }
 
 .background-checked {
-  opacity: 0.5;
+  opacity: 0.2;
 }

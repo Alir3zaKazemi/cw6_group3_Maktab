@@ -209,7 +209,7 @@ function defaultTask(day) {
 			for (let j = 0; j < days[i].task.length; j++) {
 				tasks.innerHTML += `<div id=${days[i].task[j].taskId} class="task">
   <div class="row">
-  <input onclick="checkBoxFunction(this)" type="checkbox" >
+  <input onclick="checkBoxFunction(this)" type="checkbox" class="tik" >
     <p class="task-text">${days[i].task[j].taskName}</p>
   </div>
 
